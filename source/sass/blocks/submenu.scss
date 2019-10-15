@@ -1,0 +1,52 @@
+// .submenu {
+//   position: absolute;
+//   top: calc(100%);
+//   left: 0;
+//   z-index: 1;
+//   width: 218px;
+//   min-width: 100%;
+//   @include list-reset;
+//   padding: 7px 13px;
+//   background-color: #fff;
+//   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  
+//   display: none;
+// }
+
+// .submenu--bordered {
+//   border-top: 1px solid #6b6b6b;
+// }
+
+// .submenu__wrap:hover .submenu {
+//   display: block;
+//   cursor: default;
+// }
+
+// .submenu > li:not(:last-of-type) {
+//   margin-bottom: 10px;
+// }
+
+// .sumbenu__link {
+//   font-size: 15px;
+//   line-height: 10px;
+//   color: $color-text-light;
+//   text-decoration: none;
+//   text-transform: lowercase;
+// }
+
+// .sumbenu__link.active {
+//   color: $color-accent-2;
+//   cursor: default;
+// }
+
+// .sumbenu__link:hover:not(.active) {
+//   color: $color-accent;
+// }
+
+// .submenu:hover {
+//   display: block;
+// }
+
+// // .submenu__list > li:hover .submenu {
+// //   display: block;
+// // }

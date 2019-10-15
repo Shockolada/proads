@@ -1,0 +1,19 @@
+.kmc-question {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.kmc-question span {
+  padding: 10px;
+  background-color: #fce6c6;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .kmc-question span {
+    font-size: 50px;
+  }
+}

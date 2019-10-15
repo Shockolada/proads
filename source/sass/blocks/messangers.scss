@@ -1,0 +1,42 @@
+.messangers {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-right: -20px;
+}
+
+.messangers li {
+  margin-right: 20px;
+}
+
+.messangers__link {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    transition: transform 0.1s linear;
+  }
+}
+
+.messangers__link:hover::after {
+  // transform: csale(2);
+  transform: scale(1.1);
+}
+
+.messangers__link--viber::after {
+  @include sprite($viber-1-);
+}
+
+.messangers__link--whatsapp::after {
+  @include sprite($whatsapp);
+}
+.messangers__link--telegram::after {
+  @include sprite($telegram);
+}
+
+// @media (min-width)

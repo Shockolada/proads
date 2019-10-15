@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-right: -20px;
+}
+
+.social li {
+  font-size: 0;
+}
+
+.social__link svg {
+  fill: $color-accent-2;
+  transition: 0.1s linear;
+}
+
+.social__link:hover svg {
+  fill: $color-accent;
+}
+
+.social__icon {
+  fill: $color-accent-2;
+  margin-right: 20px;
+}
+
+@media (min-width: $desktopXS) {
+  .social {
+    justify-content: flex-start;
+  }
+}

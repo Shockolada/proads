@@ -1,0 +1,53 @@
+.kmc-stages__wrap {
+  background: linear-gradient(to bottom,#fdfcfd,#eaeaea);
+}
+
+.kmc-stages__note p {
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.kmc-stages__note img {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.kmc-stages__icon--traffic {
+  &::after {
+    @include sprite($stages-icon-1);
+
+  }
+}
+
+.kmc-stages__icon--audience {
+  &::after {
+    @include sprite($stages-icon-2);
+  }
+}
+
+.kmc-stages__icon--conversion {
+  &::after {
+    @include sprite($stages-icon-3);
+
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .kmc-stages__note {
+    display: flex;
+    align-items: center;
+    // font-size: 38px;
+  }
+
+  .kmc-stages__note p {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .kmc-stages__note img {
+    flex-shrink: 0;
+    margin: 0;
+  }
+}

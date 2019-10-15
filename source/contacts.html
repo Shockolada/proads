@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./blocks/head.html')
+
+<body>
+
+  @@include('./blocks/header.html')
+
+  <main class="page-content page-content--inner">
+
+    @@include('./blocks/inner-menu.html')
+
+    <div class="breadcrumbs container">
+      <ul class="breadcrumbs__list">
+        <li><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li><span class="breadcrumbs__link breadcrumbs__link--current">Контакты</span></li>
+      </ul>
+    </div>
+
+    <div class="bg-top bg-top--contacts">
+      <div class="container">
+        <div class="contacts-block">
+          <div class="contacts-block__top">
+            <p class="contacts-block__top-item">
+              <!-- <span class="contacts-block__top-abbr contacts-block__top-abbr-1">de</span> -->
+              <span class="contacts-block__top-icon contacts-block__top-icon--de"></span>
+              <span class="contacts-block__top-text">
+                <span>digital</span>
+                <span>expert</span>
+              </span>
+            </p>
+            <p class="contacts-block__top-item">
+              <!-- <span class="contacts-block__top-abbr contacts-block__top-abbr-2">ce</span> -->
+              <span class="contacts-block__top-icon contacts-block__top-icon--ce"></span>
+              <span class="contacts-block__top-text">
+                <span>consulting</span>
+                <span>expert</span>
+              </span>
+            </p>
+            <p class="contacts-block__top-item">
+              <!-- <span class="contacts-block__top-abbr contacts-block__top-abbr-3">me</span> -->
+              <span class="contacts-block__top-icon contacts-block__top-icon--me"></span>
+              <span class="contacts-block__top-text">
+                <span>marketing</span>
+                <span>expert</span>
+              </span> 
+            </p>
+          </div>
+          <ul class="contacts-block__list">
+            <li class="contacts-block__item"><a href="" class="contacts-block__link">
+                <svg class="contacts-block__icon" width="36" height="36">
+                  <use xlink:href="img/sprite.svg#cont-fb"></use>
+                </svg>
+                www.facebook.com/Proads</a></li>
+            <li class="contacts-block__item"><a href="" class="contacts-block__link">
+                <svg class="contacts-block__icon" width="36" height="36">
+                  <use xlink:href="img/sprite.svg#cont-phone"></use>
+                </svg>
+                +373 69 010 818</a> </li>
+            <li class="contacts-block__item"><a href="" class="contacts-block__link">
+                <svg class="contacts-block__icon" width="36" height="36">
+                  <use xlink:href="img/sprite.svg#cont-mail"></use>
+                </svg>
+                info@proads.expert</a> </li>
+            <li class="contacts-block__item"><span class="contacts-block__link">
+                <svg class="contacts-block__icon" width="36" height="36">
+                  <use xlink:href="img/sprite.svg#cont-location"></use>
+                </svg>
+                str.Pușkin 44, Chișinău
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="page-title container">Карта</h1>
+
+    @@include('./blocks/map.html')
+
+
+
+    <a href="#" class="button btn_link open-modal-contacts">связаться с нами</a>
+
+  </main>
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/overlay.html')
+
+  @@include('./blocks/modal.html')
+
+  <!-- Java Script
+  ================================================== -->
+  <script src="js/main.js"></script>
+  <script src="js/main2.js"></script>
+
+</body>
+
+</html>

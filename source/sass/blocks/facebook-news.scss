@@ -1,0 +1,17 @@
+.facebook-news {
+  margin-bottom: 30px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+@media (min-width: $tablet) {
+  .facebook-news {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .facebook-news {
+    width: 340px;
+  }
+}

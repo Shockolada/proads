@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./blocks/head.html')
+
+<body>
+
+  @@include('./blocks/header.html')
+
+  <main class="page-content page-content--inner">
+
+    @@include('./blocks/inner-menu.html')
+
+    <div class="breadcrumbs container">
+      <ul class="breadcrumbs__list">
+        <li><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li><a class="breadcrumbs__link" href="index.html">kmc</a></li>
+        <li><span class="breadcrumbs__link breadcrumbs__link--current">baby-boom</span></li>
+      </ul>
+    </div>
+
+    <div class="portfolio-top portfolio-top--kmc">
+      <h1 class="portfolio-top__title container">KMC Google AdWords</h1>
+    </div>
+
+    <div class="kmc-intro__wrapp">
+      <div class="kmc-intro__company-logo">
+        <img src="img/bb-logo.png" alt="">
+      </div>
+      <div class="animation-block-kmc">
+        <p class="kmc-intro__benefit animation-block-kmc__benefit service-benefit">Прирост на
+          <span class="percent">707%</span>
+        </p>
+        <span class="kmc-cam" style="background-image: url('img/animation-kmc/cam.png')"></span>
+        <span class="kmc-task-mob" style="background-image: url('img/animation-kmc/main-task_ru.png')"><span
+            class="kmc-task-circle"></span></span>
+        <span class="kmc-cam-text-mob" style="background-image: url('img/animation-kmc/long-text-mob_ru.png')"></span>
+        <span class="kmc-result-mob-wrap"><span class="kmc-result-mob"
+            style="background-image: url('img/animation-kmc/result-mob_ru.png')"></span></span>
+
+        <span class="kmc-task" style="background-image: url('img/animation-kmc/main-task-dt_ru.png')"><span
+            class="kmc-task-circle"></span></span>
+        <span class="kmc-cam-text" style="background-image: url('img/animation-kmc/long-text_ru.png')"></span>
+        <span class="kmc-result-wrap"><span class="kmc-result"
+            style="background-image: url('img/animation-kmc/text-big-dt_ru.png')"></span></span>
+        <span class="kmc-left-man" style="background-image: url('img/animation-kmc/left-man.png')"></span>
+        <span class="kmc-right-man" style="background-image: url('img/animation-kmc/right-man.png')"></span>
+        <span class="kmc-table" style="background-image: url('img/animation-kmc/table.png')"></span>
+      </div>
+    </div>
+
+    <div class="section--portfolio kmc-stages__wrap">
+      <section class="kmc-stages container">
+        <h3 class="portfolio-title"><span>Этапы проведения </span>контекстной рекламы</h3>
+        <ul class="kmc-stages__list list-in-row">
+          <li class="list-in-row__item">
+            <span class="kmc-stages__icon--traffic list-in-row__icon"></span>
+            <p class="list-in-row__text">Увеличение количества
+              трафика</p>
+          </li>
+          <li class="list-in-row__item">
+            <span class="kmc-stages__icon--audience list-in-row__icon"></span>
+            <p class="list-in-row__text">Привлечение целевой
+              аудитории на сайт.</p>
+          </li>
+          <li class="list-in-row__item">
+            <span class="kmc-stages__icon--conversion list-in-row__icon"></span>
+            <p class="list-in-row__text">Рост количества
+              конверсий</p>
+          </li>
+        </ul>
+
+        <div class="kmc-stages__note">
+          <img src="img/stages-bg.png" alt="">
+          <p class="portfolio-title"><span>Также были запущены </span>
+            ремаркетинговые кампании</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="section--portfolio border-bottom-chain">
+      <div class="kmc-remarketing container">
+        <div class="kmc-remarketing__single">
+          <p class="kmc-remarketing__info">Контекстно-медийный ремаркетинг<br>
+            <b>(с использованием списков,
+              созданных в Google Analytics)</b></p>
+          <img src="img/kmc-img-1.png" alt="">
+        </div>
+        <div class="kmc-remarketing__single">
+          <p class="kmc-remarketing__info">Поисковый ремаркетинг<br>
+            <b>(с использованием списков,
+              созданных в Google Ads)</b></p>
+          <img src="img/kmc-img-2.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="kmc-view container section--portfolio">
+      <h3 class="portfolio-title">Как выглядит контекстная реклама?</h3>
+      <img src="img/kms-work-scheme_ru.png" alt="">
+    </div>
+
+    <div class="section--portfolio kmc-ctr__wrap">
+      <section class="kmc-ctr container">
+        <p><b>CTR — это ключевой показатель качества</b>
+          контекстного объявления, который показывает
+          сколько пользователей кликает на объявление.
+          Рассчитывается как отношение кликов по объявлению
+          к его показам в процентах.</p>
+        <img src="img/ctr_ru.png" alt="">
+        <h4>Структура рекламного аккаунта</h4>
+        <img src="img/kms-scheme_ru.png" alt="">
+      </section>
+    </div>
+
+    <div class="kmc-question container section--portfolio">
+      <span>Нужна Контекстая Реклама? </span>
+    </div>
+
+    <a href="#" class="button btn_link open-modal-contacts">связаться с нами</a>
+
+  </main>
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/overlay.html')
+
+  @@include('./blocks/modal.html')
+
+  <!-- Java Script
+  ================================================== -->
+  <script src="js/main.js"></script>
+  <script>
+    $(window).scroll(function () {
+      if (!$('.animation-block-kmc').hasClass('active')) {
+        if ($(window).scrollTop() + ($(window).height() / 2) >= $('.animation-block-kmc').offset().top) {
+          $('.animation-block-kmc').addClass('active')
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

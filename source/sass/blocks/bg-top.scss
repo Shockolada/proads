@@ -1,0 +1,23 @@
+.bg-top {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.bg-top--contacts {
+  height: auto;
+  background-color: #509fce;
+  // background-image: url("../img/cont-top.png");
+}
+
+
+@media (min-width: $tablet) {
+  .bg-top--contacts {
+    height: 290px;
+    background-color: #509fce;
+    background-image: url("../img/cont-top.png");
+  }
+}

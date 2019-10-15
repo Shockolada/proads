@@ -1,0 +1,18 @@
+.portfolio {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .portfolio {
+    margin-right: -45px;
+    margin-bottom: 35px;
+  }
+}

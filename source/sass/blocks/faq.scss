@@ -1,0 +1,150 @@
+.faq {
+  position: relative;
+}
+
+.faq__border {
+  fill: #ffffff;
+}
+
+.faq__title {
+  // margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.faq__list {
+  @include list-reset;
+  margin-bottom: 40px;
+}
+
+.faq__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  border: 1px solid $color-accent-2;
+  border-radius: 5px;
+
+  transition: background-color 0.2s linear;
+}
+
+.faq__item-title {
+  position: relative;
+  margin: 0;
+  padding: 15px 0;
+  padding-right: 32px;
+  font-size: 17px;
+  font-weight: 700;
+  color: $color-accent-2;
+
+  cursor: pointer;
+}
+
+.faq__item-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include sprite($double-left-chevron);
+  }
+}
+
+.faq__info {
+  margin: 0;
+  padding: 15px 0;
+  border-top: 1px solid #ccd1d9;
+  display: none;
+}
+
+.faq__info p {
+
+}
+
+.faq__item:hover {
+  background-color: #f5f7fa;
+}
+
+.faq__item--active {
+  margin-bottom: 30px;
+  background-color: #f5f7fa;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    z-index: -1;
+    display: block;
+    width: 75%;
+    height: 5px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.faq__item--active .faq__item-title {}
+
+.faq__item--active .faq__item-icon {
+  transform: scale(0.8) translateY(-50%);
+  background-color: $color-accent-2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include sprite($cance-l-1-);
+  }
+}
+
+.faq__item.closed {
+  opacity: 0.35;
+}
+
+@media (min-width: $tablet) {
+  .faq {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+
+  .faq {
+    padding-top: 100px;
+  }
+
+  .faq__title {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+  .faq__item {
+    padding-left: 30px;
+    padding-right: 45px;
+  }
+
+  .faq__item-title {
+    padding: 30px 0;
+    font-size: 20px;
+  }
+
+  .faq__item--active .faq__item-icon {
+    transform: scale(1) translateY(-50%);
+  }
+
+  .faq__info {
+    margin: 0;
+    padding: 0;
+    padding: 30px 0;
+
+  }
+}

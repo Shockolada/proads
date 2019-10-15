@@ -1,0 +1,140 @@
+.contacts-block {
+  padding: 20px 0;
+  padding-bottom: 10px;
+  color: #fff;
+  
+}
+
+.contacts-block__top {
+  margin-bottom: 25px;
+}
+
+.contacts-block__top-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+// .contacts-block__top-abbr {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 38px;
+//   // height: 30px;
+//   font-family: $font;
+//   font-size: 30px;
+//   font-weight: 700;
+//   line-height: 1;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
+
+// .contacts-block__top-abbr-1 {
+//   background-color: #1664a9;
+// }
+
+// .contacts-block__top-abbr-2 {
+//   background-color: #771d2d;
+// }
+
+// .contacts-block__top-abbr-3 {
+//   background-color: #cc0535;
+// }
+
+.contacts-block__top-icon {
+}
+
+.contacts-block__top-icon--me {
+  @include sprite($me);
+}
+.contacts-block__top-icon--ce {
+  @include sprite($ce);
+}
+.contacts-block__top-icon--de {
+  @include sprite($de);
+}
+
+
+.contacts-block__top-text {
+  display: flex;
+  // flex-direction: column;
+  margin-left: 5px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.contacts-block__top-text span:first-of-type {
+  margin-right: 10px;
+}
+
+.contacts-block__top-text span:last-of-type {
+  letter-spacing: 0.3em;
+}
+
+.contacts-block__list {
+  @include list-reset;
+  font-family: $font-accent-2;
+}
+
+.contacts-block__item {
+  position: relative;
+  margin-bottom: 15px;
+  font: $font-accent;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  // padding-left: 45px;
+}
+
+.contacts-block__link {
+  display: flex;
+  align-items: center;
+  // font: $font-accent;
+  // font-size: 18px;
+  // font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+span.contacts-block__link {
+  cursor: default;
+}
+
+.contacts-block__icon {
+  margin-right: 10px;
+  fill: #ffffff;
+  flex-shrink: 0;
+  // position: absolute;
+  // left: 0;
+  // top: 50%;
+  // transform: translateY(-50%);
+}
+
+
+
+@media (min-width: $tablet) {
+  .contacts-block {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 460px;
+    padding: 30px;
+    padding-bottom: 10px;
+    background-color: #509fce;
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,.35);
+  }
+
+  .contacts-block__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-block__top-text {
+    flex-direction: column;
+  }
+
+  .contacts-block__link {
+    font-size: 23px;
+  }
+}

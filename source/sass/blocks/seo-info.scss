@@ -1,0 +1,68 @@
+.seo-info__wrap {
+  background: linear-gradient(to bottom,#fdfcfd,#eaeaea);
+}
+
+.seo-info__note p {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.seo-info__note img {
+  display: block;
+  width: 385px;
+  margin: 0 auto;
+}
+
+.seo-info__icon--kmc {
+  &::after {
+    @include sprite($hands);
+
+  }
+}
+
+.seo-info__icon--offers {
+  &::after {
+    @include sprite($hand-ok);
+  }
+}
+
+.seo-info__icon--results {
+  &::after {
+    @include sprite($hands-deal);
+  }
+}
+
+.seo-info__icon--testimonials {
+  &::after {
+    @include sprite($thumb-up);
+  }
+}
+
+.seo-info__icon--location {
+  &::after {
+    @include sprite($finger-up);
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .seo-info__note {
+    display: flex;
+    align-items: center;
+  }
+
+  .seo-info__note p {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .seo-info__note img {
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .seo-info__note p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}

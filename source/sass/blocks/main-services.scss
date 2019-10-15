@@ -1,0 +1,9 @@
+.main-services {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  .main-services {
+    margin-bottom: 0;
+  }
+}

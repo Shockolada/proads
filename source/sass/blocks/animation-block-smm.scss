@@ -1,0 +1,191 @@
+.animation-block-smm {
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 505px;
+  // background: url("../img/animation-smm/phone.png") no-repeat bottom center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 384px 380px;
+}
+
+.animation-block-smm__benefit {
+  height: 0;
+  overflow: hidden;
+
+  transition: 0.5s height 3.1s linear;
+}
+
+.animation-block-smm .message {
+  position: absolute;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.animation-block-smm .message-1 {
+  left: 10px;
+  bottom: 200px;
+  width: 170px;
+  height: 70px;
+  transition: 0.5s opacity linear;
+}
+
+.animation-block-smm .message-2 {
+  right: 10px;
+  bottom: 270px;
+  width: 212px;
+  height: 70px;
+  transition: 0.5s opacity 1.2s linear;
+}
+
+.animation-block-smm .message-3 {
+  left: 10px;
+  bottom: 340px;
+  width: 195px;
+  height: 70px;
+  transition: 0.5s opacity 2.2s linear;
+}
+
+.animation-block-smm .arrow {
+  position: absolute;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.animation-block-smm .arrow-1 {
+  left: 120px;
+  bottom: 260px;
+  width: 28px;
+  height: 41px;
+  transition: 0.2s opacity 0.7s linear;
+}
+
+.animation-block-smm .arrow-2 {
+  right: 140px;
+  bottom: 330px;
+  width: 28px;
+  height: 41px;
+  transition: 0.2s opacity 1.7s linear;
+}
+
+.animation-block-smm .arrow-3-mob {
+  bottom: 400px;
+  left: 125px;
+  width: 83px;
+  height: 99px;
+  transition: 0.2s opacity 2.7s linear;
+}
+
+.animation-block-smm .arrow-3 {
+  display: none;
+}
+
+.animation-block-smm.active .message-1,
+.animation-block-smm.active .message-2,
+.animation-block-smm.active .message-3,
+.animation-block-smm.active .arrow-1,
+.animation-block-smm.active .arrow-2,
+.animation-block-smm.active .arrow-3-mob,
+  .animation-block-smm.active .arrow-3 {
+  opacity: 1;
+}
+
+.animation-block-smm.active .animation-block-smm__benefit {
+  height: 120px;
+}
+
+@media (min-width: $tablet) {
+  .animation-block-smm {
+    max-width: 750px;
+    padding-bottom: 600px;
+    background-position: -30px bottom;
+    background-size: 480px 475px;
+  }
+
+  .animation-block-smm .message {
+    position: absolute;
+    opacity: 0;
+    width: 170px;
+    height: 70px;
+  }
+
+  .animation-block-smm .message-1 {
+    width: 202px;
+    height: 83px;
+    left: 30px;
+    bottom: 260px;
+    transition: 0.5s opacity linear;
+  }
+
+  .animation-block-smm .message-2 {
+    right: unset;
+    left: 220px;
+    bottom: 350px;
+    width: 253px;
+    height: 83px;
+    transition: 0.5s opacity 1.2s linear;
+  }
+
+  .animation-block-smm .message-3 {
+    left: 0;
+    bottom: 438px;
+    width: 234px;
+    height: 83px;
+    transition: 0.5s opacity 2.2s linear;
+  }
+
+  .animation-block-smm .arrow {
+    opacity: 0;
+  }
+
+  .animation-block-smm .arrow-1 {
+    left: 200px;
+    bottom: 335px;
+    width: 34px;
+    height: 48px;
+    transition: 0.2s opacity 0.7s linear;
+  }
+
+  .animation-block-smm .arrow-2 {
+    right: unset;
+    left: 215px;
+    bottom: 425px;
+    width: 34px;
+    height: 48px;
+    transition: 0.2s opacity 1.7s linear;
+  }
+
+  .animation-block-smm .arrow-3-mob {
+    display: none;
+  }
+
+  .animation-block-smm .arrow-3 {
+    display: block;
+    bottom: 500px;
+    left: 220px;
+    width: 132px;
+    height: 103px;
+    transition: 0.2s opacity 2.7s linear;
+  }
+
+  .animation-block-smm__benefit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    overflow: visible;
+
+    transform: scale(0);
+    transform-origin: center;
+
+    transition: 0.3s transform 3.1s linear;
+  }
+
+  .animation-block-smm.active .animation-block-smm__benefit {
+    transform: scale(1);
+  }
+}

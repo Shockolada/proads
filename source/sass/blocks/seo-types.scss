@@ -1,0 +1,112 @@
+.seo-types__wrap {
+}
+
+.seo-types {
+
+}
+
+.seo-types__list {
+  @include list-reset;
+}
+
+.seo-types__list li {
+  counter-increment: section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.seo-types__title {
+  margin-bottom: 10px;
+}
+
+.seo-types__icon {
+  // align-self: flex-end;
+}
+
+.seo-types__icon--white {
+  display: inline-block;
+  @include sprite($icon-1);
+}
+
+.seo-types__icon--gray {
+  display: inline-block;
+  @include sprite($icon-2);
+}
+
+.seo-types__icon--dark {
+  display: inline-block;
+  @include sprite($icon-3);
+}
+
+.seo-types__info {
+  position: relative;
+  min-height: 100px;
+  margin: 0;
+  margin-top: -20px;
+  padding-left: 65px;
+  padding-top: 45px;
+  z-index: 1;
+}
+
+.seo-types__info::before {
+  content: counter(section) ". ";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  background-image: url(../img/elipse.png);
+}
+
+@media(min-width: $tablet) {
+  .seo-types__list li {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .seo-types__title {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .seo-types__info {
+    max-width: 300px;
+    margin-left: 20px;
+  }
+
+  .seo-types__info p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media(min-width: $desktopXS) {
+  .seo-types__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    // margin-bottom: -60px;
+  }
+
+  .seo-types__list li {
+    width: 50%;
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+}

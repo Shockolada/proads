@@ -1,0 +1,17 @@
+.portfolio-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.portfolio-title span {
+  font-weight: 300;
+}
+
+@media (min-width: $tablet) {
+  .portfolio-title {
+    font-size: 48px;
+  }
+}

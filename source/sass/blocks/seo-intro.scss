@@ -1,0 +1,28 @@
+.seo-intro__wrapp {
+  padding-top: 30px;
+  background: linear-gradient(to bottom,#85a9bf,#86a9be);
+}
+
+.seo-intro__company-logo {
+  margin-bottom: 67px;
+}
+
+.seo-intro__company-logo img {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.seo-intro__benefit {
+  font-size: 45px;
+}
+
+.seo-intro__benefit .percent {
+  font-size: 55px;
+}
+
+@media (min-width: $tablet) {
+  .seo-intro__company-logo {
+    // margin-bottom: 45px;
+  }
+}

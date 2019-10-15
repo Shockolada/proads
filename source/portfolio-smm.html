@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./blocks/head.html')
+
+<body>
+
+  @@include('./blocks/header.html')
+
+  <main class="page-content page-content--inner">
+
+    @@include('./blocks/inner-menu.html')
+
+    <div class="breadcrumbs container">
+      <ul class="breadcrumbs__list">
+        <li><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li><span class="breadcrumbs__link breadcrumbs__link--current">smm</span></li>
+      </ul>
+    </div>
+    
+    <div class="portfolio-top portfolio-top--smm">
+      <h1 class="portfolio-top__title container">SMM: THE INSIDER SECRETS</h1>
+    </div>
+
+    @@include('./blocks/portfolio.html')
+
+    <div class="benefits__wrap">
+      <div class="benefits">
+        <p class="benefits__info">При заказе услуги более, чем на 3 месяца,
+          настройка и создание страницы бесплатно!</p>
+      </div>
+    </div>
+
+
+    <a href="#" class="button btn_link open-modal-contacts">связаться с нами</a>
+
+  </main>
+
+  @@include('./blocks/footer.html')
+
+  @@include('./blocks/overlay.html')
+
+  @@include('./blocks/modal.html')
+
+  <!-- Java Script
+  ================================================== -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

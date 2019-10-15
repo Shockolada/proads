@@ -1,0 +1,30 @@
+.page-top-bg {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+.page-top-bg.yellow {
+  background-color: #eff2d8;
+}
+
+.page-top-bg.lightgreen {
+  background-color: #d6ead4;
+}
+
+.page-top-bg.green {
+  background-color: #81b0b2;
+}
+
+@media (min-width: $tablet) {
+  .page-top-bg {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .page-top-bg {
+    margin-bottom: 90px;
+    padding-bottom: 90px;
+  }
+}

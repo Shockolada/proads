@@ -1,0 +1,46 @@
+.numbered-list {
+  @include list-reset;
+  counter-reset: section;
+}
+
+.numbered-list li {
+  position: relative;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding-left: 65px;
+  padding-top: 45px;
+  z-index: 1;
+}
+
+.numbered-list li::before {
+  counter-increment: section;
+  content: counter(section) ".  ";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  // border: 1px solid #eaeaea;
+  // border-radius: 50%;
+  font-size: 40px;
+  background-image: url(../img/elipse.png);
+}
+
+@media (min-width: $tablet) {
+  .numbered-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+  
+  .numbered-list li {
+    width: calc(50% - 30px);
+    max-width: 370px;
+    margin-right: 30px;
+  }
+}

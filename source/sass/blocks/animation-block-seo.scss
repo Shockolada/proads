@@ -1,0 +1,220 @@
+.animation-block-seo {
+  position: relative;
+  max-width: 330px;
+  margin: 0 auto;
+  padding-bottom: 460px;
+}
+
+.animation-block-seo span {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.seo-task {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 138px;
+  height: 106px;
+  opacity: 0;
+
+  transition: 0.5s opacity linear;
+}
+
+.seo-main-task {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 168px;
+  height: 121px;
+  opacity: 0;
+
+  transition: 0.5s opacity 1.2s linear;
+}
+
+.seo-phone-img {
+  position: absolute;
+  bottom: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 108px;
+  height: 186px;
+  opacity: 0;
+
+  transition: 0.5s opacity 2.2s linear;
+}
+
+.seo-mess {
+  position: absolute;
+  left: 19px;
+  transform: scale(0);
+  top: 35px;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  transform-origin: center;
+
+  transition: 0.3s transform 3.2s linear;
+}
+
+.seo-eye {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 37px;
+  width: 47px;
+  height: 41px;
+  opacity: 0;
+
+  transition: 0.3s opacity 2.8s linear;
+}
+
+.seo-phone-triangle {
+  position: absolute;
+  bottom: 363px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0);
+  width: 270px;
+  height: 97px;
+  transform-origin: bottom;
+  background-position: center;
+
+  transition: 0.3s transform 3.8s linear;
+}
+
+.seo-arrow-top,
+.seo-arrow-right {
+  display: none;
+}
+
+.animation-block-seo__benefit {
+  width: 265px;
+  height: 0;
+  outline: none;
+  overflow: hidden;
+
+  transition: 0.7s height 4.2s linear, 0.1s outline 4.1s linear;
+}
+
+.animation-block-seo.active .seo-main-task,
+.animation-block-seo.active .seo-task,
+.animation-block-seo.active .seo-phone-img,
+.animation-block-seo.active .seo-eye {
+  opacity: 1;
+}
+
+.animation-block-seo.active .seo-mess {
+  transform: scale(1);
+}
+
+.animation-block-seo.active .seo-phone-triangle {
+  transform: translateX(-50%) scaleY(1);
+}
+
+.animation-block-seo.active .animation-block-seo__benefit {
+  height: 115px;
+  outline: 1px solid #ffffff;
+}
+
+@media (min-width: $tablet) {
+
+  .animation-block-seo {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 710px;
+    padding-bottom: 590px;
+  }  
+
+  .seo-arrow-top,
+  .seo-arrow-right {
+    display: block;
+    opacity: 0;
+  }
+
+  .seo-arrow-top {
+    position: absolute;
+    bottom: 165px;
+    left: 115px;
+    width: 77px;
+    height: 108px;
+
+    transition: 0.3s opacity 0.7s linear;
+  }
+
+  .seo-arrow-right {
+    position: absolute;
+    left: 280px;
+    bottom: 320px;
+    z-index: 1;
+    width: 150px;
+    height: 94px;
+
+    transition: 0.4s opacity 1.6s linear;
+  }
+
+  .seo-task {
+    bottom: 35px;
+    left: 45px;
+    width: 218px;
+    height: 167px;
+  }
+
+  .seo-main-task {
+    bottom: 265px;
+    left: 0;
+    width: 286px;
+    height: 171px;
+  }
+
+  .seo-phone-img {
+    bottom: 35px;
+    left: unset;
+    right: 50px;
+    transform: translateX(0);
+    width: 243px;
+    height: 420px;
+  }
+
+  .seo-phone-triangle {
+    position: absolute;
+    bottom: 350px;
+    left: unset;
+    right: 0;
+    transform: translateX(0) scale(0);
+    width: 342px;
+    height: 125px;
+  }
+
+  .seo-mess {
+    top: 80px;
+    left: 43px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .seo-eye {
+    bottom: 84px;
+    width: 107px;
+    height: 93px;
+  }
+
+  .animation-block-seo__benefit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 342px;
+    margin: 0;
+  }
+
+  .animation-block-seo.active .seo-arrow-top {
+    opacity: 1;
+  }
+
+  .animation-block-seo.active .seo-arrow-right {
+    opacity: 1;
+  }
+
+  .animation-block-seo.active .seo-phone-triangle {
+    transform: translateX(0) scaleY(1);
+  }
+}

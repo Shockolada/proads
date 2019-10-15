@@ -1,0 +1,71 @@
+.smm-tasks__wrap {
+  background: linear-gradient(to bottom,#fdfcfd,#eaeaea);
+}
+
+.smm-tasks__note p {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.smm-tasks__note img {
+  display: block;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.smm-tasks__icon--brand {
+  &::after {
+    @include sprite($hands);
+
+  }
+}
+
+.smm-tasks__icon--sales {
+  &::after {
+    @include sprite($hand-ok);
+  }
+}
+
+.smm-tasks__icon--targeting {
+  &::after {
+    @include sprite($hands-deal);
+
+  }
+}
+
+.smm-tasks__icon--loyalty {
+  &::after {
+    @include sprite($thumb-up);
+
+  }
+}
+
+.smm-tasks__icon--traffic {
+  &::after {
+    @include sprite($finger-up);
+
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .smm-tasks__note {
+    display: flex;
+    align-items: center;
+    // font-size: 38px;
+  }
+
+  .smm-tasks__note p {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .smm-tasks__note img {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .smm-tasks__note p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}

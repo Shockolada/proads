@@ -1,0 +1,293 @@
+.animation-block-kmc {
+  position: relative;
+  max-width: 290px;
+  margin: 0 auto;
+  padding-bottom: 570px;
+
+  overflow: hidden;
+}
+
+.animation-block-kmc span {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.kmc-cam {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 332px;
+
+  opacity: 0;
+  transition: 0.5s opacity linear;
+}
+
+.kmc-cam-text-mob {
+  position: absolute;
+  bottom: 306px;
+  left: 32px;
+  width: 235px;
+  height: 27px;
+
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s opacity 2s linear,
+    0.5s transform 2s linear;
+}
+
+.kmc-task-mob {
+  position: absolute;
+  bottom: 145px;
+  right: 10px;
+  width: 100px;
+  height: 90px;
+
+  opacity: 0;
+  transition: 0.5s opacity 0.7s linear;
+}
+
+.kmc-task-mob .kmc-task-circle {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translateX(0);
+
+  transition: 0.3s transform 1.5s linear;
+}
+
+.kmc-result-mob-wrap {
+  position: absolute;
+  left: 0;
+  right: 5px;
+  width: 290px;
+  height: 0;
+
+  transition: 0.5s height 2.8s linear;
+  overflow: hidden;
+}
+
+.kmc-result-mob {
+  display: block;
+  width: 290px;
+  height: 241px;
+}
+
+.animation-block-kmc__benefit {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  opacity: 0;
+  transition: 0.3s opacity 4s linear;
+}
+
+.kmc-task .kmc-task-circle {
+  display: none;
+}
+
+.animation-block-kmc.active {
+  .kmc-cam {
+    opacity: 1;
+  }
+
+  .kmc-cam-text-mob {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .kmc-task-mob {
+    opacity: 1;
+  }
+
+  .kmc-task-mob .kmc-task-circle {
+    transform: translateX(-50px);
+  }
+
+  .kmc-result-mob-wrap {
+    height: 241px;
+  }
+
+  .animation-block-kmc__benefit {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .kmc-result-mob-wrap {
+    display: none;
+  }
+
+  .kmc-result-mob {
+    display: none;
+  }
+
+  .kmc-task-mob {
+    display: none;
+
+    .kmc-task-circle {
+      display: none;
+    }
+  }
+
+  .kmc-cam-text-mob {
+    display: none;
+  }
+
+  .animation-block-kmc {
+    max-width: 1100px;
+    margin-top: -100px;
+    padding-bottom: 725px;
+  }
+
+  .kmc-cam {
+    left: 235px;
+    width: 190px;
+    height: 532px;
+
+    opacity: 0;
+    transition: 0.5s opacity linear;
+  }
+
+  .kmc-task {
+    position: absolute;
+    bottom: 235px;
+    left: 405px;
+    width: 170px;
+    height: 140px;
+
+    opacity: 0;
+    transition: 0.5s opacity 0.7s linear;
+  }
+
+  .kmc-table {
+    position: absolute;
+    right: 55px;
+    bottom: 0;
+    width: 560px;
+    height: 355px;
+
+    transform: translateX(150%);
+    transition: 0.5s transform 1.4s;
+  }
+
+  .kmc-right-man {
+    position: absolute;
+    bottom: 0;
+    right: 55px;
+    width: 560px;
+    height: 355px;
+
+    opacity: 0;
+    transition: 0.5s opacity 2s linear;
+  }
+
+  .kmc-task .kmc-task-circle {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transform: translateX(0);
+
+    transition: 0.3s transform 2.5s linear;
+  }
+
+  .kmc-task .kmc-task-circle {
+    display: block;
+  }
+
+
+  .kmc-left-man {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 535px;
+
+    transform: translateX(-310px);
+    transition: 0.5s transform 3s linear;
+  }
+
+  .kmc-cam-text {
+    position: absolute;
+    left: 280px;
+    bottom: 491px;
+    width: 380px;
+    width: 0;
+    height: 41px;
+
+    transition: 0.3s width 3.5s linear;
+  }
+
+  .kmc-result-wrap {
+    position: absolute;
+    bottom: 300px;
+    left: 660px;
+    width: 439px;
+    width: 0;
+    height: 419px;
+
+    overflow: hidden;
+    transition: 0.5s width 3.8s linear;
+  }
+
+  .kmc-result {
+    display: block;
+    width: 439px;
+    height: 419px;
+  }
+
+  .animation-block-kmc__benefit {
+    position: absolute;
+    top: 160px;
+    left: unset;
+    right: 40px;
+    transform: translateX(0);
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: 0.3s opacity 4.4s linear;
+  }
+
+
+  .animation-block-kmc.active {
+    .kmc-task {
+      opacity: 1;
+    }
+
+    .kmc-table {
+      transform: translateX(0);
+    }
+
+    .kmc-right-man {
+      opacity: 1;
+    }
+
+    .kmc-task .kmc-task-circle {
+      transform: translateX(-90px);
+    }
+
+    .kmc-left-man {
+      transform: translateX(0);
+    }
+
+    .kmc-cam-text {
+      width: 380px;
+    }
+
+    .kmc-result-wrap {
+      width: 439px;
+    }
+  }
+}

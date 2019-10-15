@@ -1,0 +1,41 @@
+.meta {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -10px;
+  padding: 10px 0;
+}
+
+.meta__item {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #cccccc;
+}
+
+.meta__item span {
+  color: #474A51;
+}
+
+.meta__time {
+  order: -1;
+}
+
+.meta__tags span {
+  margin-right: 5px;
+}
+
+@media (min-width: $tablet) {
+  .meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .meta__time {
+    order: 0;
+  }
+
+  .meta__tags {
+    width: 100%;
+  }
+}

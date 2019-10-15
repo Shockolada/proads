@@ -1,0 +1,39 @@
+.breadcrumbs__list {
+  display: flex;
+  @include list-reset;
+  margin: 0 -10px;
+  padding: 15px 0;
+}
+
+.breadcrumbs li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.breadcrumbs li:not(:last-of-type) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 3px;
+    right: -10px;
+    width: 1px;
+    background-color: $color-text-light;
+  }
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  font-size: 15px;
+  color: $color-text-light
+}
+
+.breadcrumbs__link--current {
+  cursor: default;
+}
+
+@media (min-width: $tablet) {
+  .breadcrumbs__list {
+    padding: 30px 0;
+  }
+}

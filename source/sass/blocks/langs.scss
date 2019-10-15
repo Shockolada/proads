@@ -1,0 +1,25 @@
+.langs {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-right: -15px;
+  font-family: $opensans;
+  font-weight: 300;
+}
+
+.langs li {
+  margin-right: 15px;
+}
+
+.langs__link {
+  color: $color-text-light;
+  text-decoration: none;
+}
+
+.langs__link:hover {
+  color: $color-accent-2;
+}
+
+.langs__link.active {
+  color: $color-accent;
+}

@@ -1,0 +1,44 @@
+.kmc-ctr__wrap {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    // bottom: 0;
+
+    background: linear-gradient(to top,#ffffff,#f0f3f4);
+  }
+}
+
+.kmc-ctr img {
+  display: block;
+  margin: 0 auto;
+}
+
+.kmc-ctr h4 {
+  margin: 60px 0;
+  margin-bottom: 40px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.kmc-ctr p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 38px;
+  font-size: 26px;
+  text-align: center;
+}
+
+@media (min-width: $desktopXS) {
+  .kmc-ctr p {
+    font-size: 38px;
+  }
+
+  .kmc-ctr h4 {
+    font-size: 38px;
+  }
+}

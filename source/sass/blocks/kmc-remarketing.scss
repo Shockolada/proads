@@ -1,0 +1,40 @@
+.kmc-remarketing__single {
+  max-width: 550px;
+  margin: 0 auto;
+  // padding-bottom: 230px;
+}
+
+.kmc-remarketing__single:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+
+.kmc-remarketing__single p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.kmc-remarketing__single img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .kmc-remarketing__single p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .kmc-remarketing {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .kmc-remarketing__single:not(:last-of-type) {
+    margin-bottom:0;
+  }
+  
+  .kmc-remarketing__single {
+    margin: 0;
+  }
+}

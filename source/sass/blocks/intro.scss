@@ -1,0 +1,32 @@
+.intro {
+  margin-bottom: 30px;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.intro__video {
+  width: 100%;
+  max-width: 1920px;
+  height: 200px;
+  margin: 0 auto;
+  background: url('../img/bg-video.png') no-repeat center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    margin-bottom: -3px;
+  }
+
+  .intro__video {
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .intro__video {
+    height: 800px;
+  }
+}

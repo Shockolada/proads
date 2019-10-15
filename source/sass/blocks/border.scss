@@ -1,0 +1,33 @@
+.border {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: none;
+}
+
+.border--flip {
+  transform: scaleX(-1) translateX(-50%);
+  transform-origin: left;
+}
+
+@media (min-width: $tablet) {
+  .border {
+    top: -82px;
+    display: block;
+    width: $desktopXS;
+    height: 83px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .border {
+    top: -154px;
+    width: 1920px;
+    height: 155px;
+  }
+
+  .border--flip {
+    top: -151px;
+  } 
+}

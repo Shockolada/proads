@@ -1,0 +1,24 @@
+.service-benefit {
+  color: #ff4600;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: lowercase;
+}
+
+.service-benefit .percent {
+  display: block;
+  font-family: $font-accent-2;
+  font-size: 58px;
+  color: #ff4600;
+}
+
+@media (min-width: $tablet) {
+  .service-benefit {
+    font-size: 56px;
+  }
+
+  .service-benefit .percent {
+    font-size: 65px;
+  }
+}
